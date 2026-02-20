@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\master.swiftdeps"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.derived\\runner.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner.dia"
+  }
+}

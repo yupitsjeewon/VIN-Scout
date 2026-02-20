@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\master.swiftdeps"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\VINScoutEngineTests.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\all-discovered-tests.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests.dia"
+  }
+}

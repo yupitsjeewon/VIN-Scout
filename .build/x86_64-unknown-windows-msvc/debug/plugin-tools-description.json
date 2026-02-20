@@ -1,0 +1,1317 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.xctest",
+      "packagePath" : "C:\\Users\\logan\\Projects\\VIN Scout",
+      "productName" : "VINScoutEnginePackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "VINScoutEnginePackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.VINScoutEngine-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\sources",
+      "importPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HTTPClientProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HistoryManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\InMemoryPersistence.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\NHTSAResponse.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\PersistenceProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINValidator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\Vehicle.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VehicleService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\swift-version--7606A3107C970489.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VINScoutEngine",
+      "moduleOutputPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngine.swiftmodule",
+      "objects" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\include\\VINScoutEngine-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "vin_scout"
+      ],
+      "outputFileMapPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngine.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HTTPClientProtocol.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HistoryManager.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\InMemoryPersistence.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\NHTSAResponse.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\PersistenceProtocol.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINError.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINValidator.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\Vehicle.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VehicleService.swift"
+      ],
+      "tempsPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VINScoutEnginePackageDiscoveredTests-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\sources",
+      "importPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\VINScoutEngineTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\swift-version--7606A3107C970489.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngineTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VINScoutEnginePackageDiscoveredTests",
+      "moduleOutputPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEnginePackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\include\\VINScoutEnginePackageDiscoveredTests-Swift.h",
+        "-sdk",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "vin_scout"
+      ],
+      "outputFileMapPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEnginePackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\VINScoutEngineTests.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\all-discovered-tests.swift"
+      ],
+      "tempsPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VINScoutEnginePackageTests-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\sources",
+      "importPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.derived\\runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\swift-version--7606A3107C970489.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngineTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEnginePackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VINScoutEnginePackageTests",
+      "moduleOutputPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEnginePackageTests.swiftmodule",
+      "objects" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\include\\VINScoutEnginePackageTests-Swift.h",
+        "-sdk",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "vin_scout"
+      ],
+      "outputFileMapPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEnginePackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.derived\\runner.swift"
+      ],
+      "tempsPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VINScoutEngineTests-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\sources",
+      "importPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\HistoryManagerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VINValidatorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VehicleMappingTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\swift-version--7606A3107C970489.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngine.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VINScoutEngineTests",
+      "moduleOutputPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngineTests.swiftmodule",
+      "objects" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\HistoryManagerTests.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VINValidatorTests.swift.o",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VehicleMappingTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "vin_scout"
+      ],
+      "outputFileMapPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\HistoryManagerTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VINValidatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VehicleMappingTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngineTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\HistoryManagerTests.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VINValidatorTests.swift",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VehicleMappingTests.swift"
+      ],
+      "tempsPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.VINScoutTester-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\sources",
+      "importPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutTester\\main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\swift-version--7606A3107C970489.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEngine.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "VINScoutTester",
+      "moduleOutputPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutTester.swiftmodule",
+      "objects" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "VINScoutTester_main",
+        "-static",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "vin_scout"
+      ],
+      "outputFileMapPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutTester.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutTester\\main.swift"
+      ],
+      "tempsPath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "VINScoutEngine" : [
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "VINScoutEngine",
+      "-package-name",
+      "vin_scout",
+      "-c",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HTTPClientProtocol.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HistoryManager.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\InMemoryPersistence.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\NHTSAResponse.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\PersistenceProtocol.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINError.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINValidator.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\Vehicle.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VehicleService.swift",
+      "-I",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\include\\VINScoutEngine-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "vin_scout",
+      "-driver-use-frontend-path",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe"
+    ],
+    "VINScoutEnginePackageDiscoveredTests" : [
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "VINScoutEnginePackageDiscoveredTests",
+      "-package-name",
+      "vin_scout",
+      "-c",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\VINScoutEngineTests.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\all-discovered-tests.swift",
+      "-I",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\include\\VINScoutEnginePackageDiscoveredTests-Swift.h",
+      "-sdk",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "vin_scout",
+      "-driver-use-frontend-path",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe"
+    ],
+    "VINScoutEnginePackageTests" : [
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "VINScoutEnginePackageTests",
+      "-package-name",
+      "vin_scout",
+      "-c",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.derived\\runner.swift",
+      "-I",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\include\\VINScoutEnginePackageTests-Swift.h",
+      "-sdk",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "vin_scout",
+      "-driver-use-frontend-path",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe"
+    ],
+    "VINScoutEngineTests" : [
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "VINScoutEngineTests",
+      "-package-name",
+      "vin_scout",
+      "-c",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\HistoryManagerTests.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VINValidatorTests.swift",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VehicleMappingTests.swift",
+      "-I",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "vin_scout",
+      "-driver-use-frontend-path",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe"
+    ],
+    "VINScoutTester" : [
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "VINScoutTester",
+      "-package-name",
+      "vin_scout",
+      "-c",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutTester\\main.swift",
+      "-I",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\index\\store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "VINScoutTester_main",
+      "-static",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\XCTest-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.3\\Windows.platform\\Developer\\Library\\Testing-6.2.3\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "vin_scout",
+      "-driver-use-frontend-path",
+      "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe"
+    ]
+  },
+  "targetDependencyMap" : {
+    "VINScoutEngine" : [
+
+    ],
+    "VINScoutEnginePackageDiscoveredTests" : [
+      "VINScoutEngineTests",
+      "VINScoutEngine"
+    ],
+    "VINScoutEnginePackageTests" : [
+      "VINScoutEnginePackageDiscoveredTests",
+      "VINScoutEngineTests",
+      "VINScoutEngine"
+    ],
+    "VINScoutEngineTests" : [
+      "VINScoutEngine"
+    ],
+    "VINScoutTester" : [
+      "VINScoutEngine"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\HistoryManagerTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VINValidatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VehicleMappingTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\VINScoutEngineTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.derived\\runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\Modules\\VINScoutEnginePackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.derived\\runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HTTPClientProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HistoryManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\InMemoryPersistence.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\NHTSAResponse.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\PersistenceProtocol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINValidator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\Vehicle.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VehicleService.swift"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\sources"
+    },
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\VINScoutEngineTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.derived\\all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\sources"
+    },
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.derived\\runner.swift"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\sources"
+    },
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.product\\Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINScoutEngine.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEnginePackageDiscoveredTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\VINScoutEngineTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageDiscoveredTests.build\\all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\VINScoutEnginePackageTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.build\\runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\HistoryManagerTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VINScoutEngineTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VINValidatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\VehicleMappingTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEnginePackageTests.product\\Objects.LinkFileList"
+    },
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\HistoryManagerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VINValidatorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Tests\\VINScoutEngineTests\\VehicleMappingTests.swift"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngineTests.build\\sources"
+    },
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutTester\\main.swift"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\sources"
+    },
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.product\\Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINScoutEngine.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\VINScoutTester.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.build\\main.swift.o"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutTester.product\\Objects.LinkFileList"
+    },
+    "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\swift-version--7606A3107C970489.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\logan\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.3+Asserts\\usr\\bin\\swiftc.exe"
+        }
+      ],
+      "outputFilePath" : "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\swift-version--7606A3107C970489.txt"
+    }
+  }
+}

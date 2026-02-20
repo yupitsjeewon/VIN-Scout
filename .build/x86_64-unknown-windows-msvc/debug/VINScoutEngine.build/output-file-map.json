@@ -1,0 +1,68 @@
+{
+  "": {
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\master.swiftdeps"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HTTPClientProtocol.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HTTPClientProtocol.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\HistoryManager.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\HistoryManager.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\InMemoryPersistence.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\InMemoryPersistence.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\NHTSAResponse.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\NHTSAResponse.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\PersistenceProtocol.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\PersistenceProtocol.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINError.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINError.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VINValidator.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VINValidator.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\Vehicle.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\Vehicle.dia"
+  },
+  "C:\\Users\\logan\\Projects\\VIN Scout\\Sources\\VINScoutEngine\\VehicleService.swift": {
+    "dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.d",
+    "object": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.swift.o",
+    "swiftmodule": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.swiftdeps",
+    "diagnostics": "C:\\Users\\logan\\Projects\\VIN Scout\\.build\\x86_64-unknown-windows-msvc\\debug\\VINScoutEngine.build\\VehicleService.dia"
+  }
+}
