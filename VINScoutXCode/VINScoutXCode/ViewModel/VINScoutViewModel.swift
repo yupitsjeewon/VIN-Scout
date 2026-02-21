@@ -34,13 +34,27 @@ final class VINScoutViewModel: ObservableObject {
     var characterCount: Int { vinInput.count }
     var isVINComplete: Bool { vinInput.count == 17 }
 
-    /// Color for the character counter — red → orange → green as you approach 17 chars.
+    /// Color for the character counter.
+    /// secondary → orange → green as you approach 17, red if you go over.
     var counterColor: Color {
         switch vinInput.count {
+        case 18...:     return .red
         case 17:        return .green
         case 14...16:   return .orange
         default:        return .secondary
         }
+    }
+
+    /// Inline warning shown below the text field while the user is still typing.
+    /// Nil when there is nothing to warn about.
+    var inlineWarning: String? {
+        // Over-length: the red counter is enough feedback, no extra text needed
+        guard vinInput.count <= 17 else { return nil }
+        let forbidden = vinInput.filter { "IOQ".contains($0) }
+        guard !forbidden.isEmpty else { return nil }
+        let unique = Array(Set(forbidden.map { String($0) }))
+            .sorted().joined(separator: ", ")
+        return "VINs cannot contain \(unique)"
     }
 
     // MARK: - Dependencies

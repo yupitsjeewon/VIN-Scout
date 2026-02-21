@@ -57,7 +57,19 @@ struct HomeView: View {
             .background(Color(.secondarySystemGroupedBackground))
             .clipShape(RoundedRectangle(cornerRadius: 10))
 
-            // Decode button
+            // Inline warning for forbidden characters (I, O, Q)
+            if let warning = viewModel.inlineWarning {
+                HStack(spacing: 6) {
+                    Image(systemName: "exclamationmark.circle.fill")
+                        .font(.caption)
+                        .foregroundStyle(.orange)
+                    Text(warning)
+                        .font(.caption)
+                        .foregroundStyle(.orange)
+                }
+                .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+
             Button {
                 Task { await viewModel.decode() }
             } label: {
