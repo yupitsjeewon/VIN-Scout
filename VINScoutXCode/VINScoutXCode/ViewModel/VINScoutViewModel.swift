@@ -30,6 +30,37 @@ final class VINScoutViewModel: ObservableObject {
     /// Setting this to non-nil pushes VehicleDetailView onto the NavigationStack.
     @Published var selectedVehicle: Vehicle? = nil
 
+    // MARK: - Appearance
+    /// Persisted preference: "system", "light", or "dark".
+    @AppStorage("colorSchemePreference") var colorSchemePreference: String = "system"
+
+    /// The SwiftUI ColorScheme to apply at the root. Nil = follow system.
+    var preferredColorScheme: ColorScheme? {
+        switch colorSchemePreference {
+        case "light": return .light
+        case "dark":  return .dark
+        default:      return nil
+        }
+    }
+
+    /// SF Symbol name for the current appearance mode button.
+    var colorSchemeIcon: String {
+        switch colorSchemePreference {
+        case "light": return "sun.max.fill"
+        case "dark":  return "moon.fill"
+        default:      return "circle.lefthalf.filled"
+        }
+    }
+
+    /// Cycles system → light → dark → system.
+    func cycleColorScheme() {
+        switch colorSchemePreference {
+        case "system": colorSchemePreference = "light"
+        case "light":  colorSchemePreference = "dark"
+        default:       colorSchemePreference = "system"
+        }
+    }
+
     // MARK: - Derived
     var characterCount: Int { vinInput.count }
     var isVINComplete: Bool { vinInput.count == 17 }

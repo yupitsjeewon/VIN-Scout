@@ -10,6 +10,8 @@ struct VINScoutApp: App {
         WindowGroup {
             HomeView()
                 .environmentObject(viewModel)
+                // nil = follow system, .light / .dark = user override
+                .preferredColorScheme(viewModel.preferredColorScheme)
         }
     }
 }

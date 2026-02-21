@@ -10,17 +10,39 @@ struct HomeView: View {
             ScrollView {
                 VStack(spacing: 24) {
                     vinSearchCard
+
+                    // Skeleton shown while API call is in flight
+                    if viewModel.isLoading {
+                        SkeletonResultCard()
+                            .padding(.top, -8)
+                    }
+
                     if let error = viewModel.errorMessage {
                         errorBanner(message: error)
                     }
                     recentScansSection
                 }
                 .padding()
+                .animation(.spring(duration: 0.35), value: viewModel.isLoading)
+                .animation(.spring(duration: 0.3), value: viewModel.errorMessage)
             }
             .background(Color(.systemGroupedBackground))
             .navigationTitle("VIN Scout")
             .navigationDestination(item: $viewModel.selectedVehicle) { vehicle in
                 VehicleDetailView(vehicle: vehicle)
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.25)) {
+                            viewModel.cycleColorScheme()
+                        }
+                    } label: {
+                        Image(systemName: viewModel.colorSchemeIcon)
+                            .symbolEffect(.bounce, value: viewModel.colorSchemePreference)
+                    }
+                    .accessibilityLabel("Toggle appearance")
+                }
             }
         }
     }
