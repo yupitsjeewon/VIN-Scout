@@ -66,7 +66,7 @@ struct HomeView: View {
                     .keyboardType(.asciiCapable)
                     .submitLabel(.go)
                     .onSubmit {
-                        Task { await viewModel.decode() }
+                        viewModel.decode()
                     }
 
                 // Character counter badge
@@ -93,7 +93,7 @@ struct HomeView: View {
             }
 
             Button {
-                Task { await viewModel.decode() }
+                viewModel.decode()
             } label: {
                 Group {
                     if viewModel.isLoading {

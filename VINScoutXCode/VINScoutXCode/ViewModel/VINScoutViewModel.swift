@@ -91,6 +91,9 @@ final class VINScoutViewModel: ObservableObject {
     // MARK: - Dependencies
     private let service: VehicleService
     private let history: HistoryManager
+    /// The currently in-flight decode task. Kept so we can cancel it if the
+    /// user taps Decode again before the previous call finishes.
+    private var currentDecodeTask: Task<Void, Never>?
 
     // MARK: - Init
     init(
@@ -104,24 +107,49 @@ final class VINScoutViewModel: ObservableObject {
 
     // MARK: - Actions
 
-    /// Validates the VIN, calls the NHTSA API, and updates state accordingly.
-    func decode() async {
+    /// Kicks off a VIN decode, cancelling any previous in-flight request first.
+    ///
+    /// Key design decisions:
+    /// - `decode()` is NOT async. It owns a `Task` internally so callers
+    ///   (buttons, `.onSubmit`) can call it without needing `Task { await ... }`.
+    /// - `currentDecodeTask?.cancel()` runs before every new request, so only
+    ///   the latest tap ever updates the UI.
+    /// - After every `await`, we check `Task.isCancelled` so a stale response
+    ///   that arrives late is silently discarded rather than overwriting a newer result.
+    /// - `CancellationError` is caught separately and ignored — it is not an
+    ///   error the user caused, so we never show it in the error banner.
+    func decode() {
         let vin = vinInput.trimmingCharacters(in: .whitespaces)
         guard !vin.isEmpty else { return }
 
-        errorMessage = nil
-        isLoading = true
-        defer { isLoading = false }
+        // Cancel the previous request before starting a new one
+        currentDecodeTask?.cancel()
 
-        do {
-            let vehicle = try await service.lookup(vin: vin)
-            history.record(vehicle)
-            recentVehicles = history.history()
-            selectedVehicle = vehicle
-        } catch let error as VINError {
-            errorMessage = error.errorDescription
-        } catch {
-            errorMessage = error.localizedDescription
+        currentDecodeTask = Task {
+            errorMessage = nil
+            isLoading = true
+            defer { isLoading = false }
+
+            do {
+                let vehicle = try await service.lookup(vin: vin)
+
+                // Discard result if this task was cancelled while the network
+                // call was in-flight (user tapped Decode again with a new VIN)
+                guard !Task.isCancelled else { return }
+
+                history.record(vehicle)
+                recentVehicles = history.history()
+                selectedVehicle = vehicle
+
+            } catch is CancellationError {
+                // Silently ignore — a newer decode() call is already running
+            } catch let error as VINError {
+                guard !Task.isCancelled else { return }
+                errorMessage = error.errorDescription
+            } catch {
+                guard !Task.isCancelled else { return }
+                errorMessage = error.localizedDescription
+            }
         }
     }
 
