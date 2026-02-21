@@ -5,10 +5,14 @@ struct VehicleDetailView: View {
 
     let vehicle: Vehicle
 
-    private let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
+    /// Switches grid layout at accessibility text sizes so cards aren't squeezed.
+    @Environment(\.dynamicTypeSize) private var typeSize
+
+    private var columns: [GridItem] {
+        typeSize.isAccessibilitySize
+            ? [GridItem(.flexible())]
+            : [GridItem(.flexible()), GridItem(.flexible())]
+    }
 
     var body: some View {
         ScrollView {
@@ -45,8 +49,13 @@ struct VehicleDetailView: View {
                 Text([vehicle.make, vehicle.model]
                     .compactMap { $0 }
                     .joined(separator: " "))
-                    .font(.largeTitle.weight(.bold))
+                    // Switch to .title2 at accessibility sizes so the text
+                    // doesn't overflow the hero card
+                    .font(typeSize.isAccessibilitySize
+                          ? .title2.weight(.bold)
+                          : .largeTitle.weight(.bold))
                     .foregroundStyle(.white)
+                    .minimumScaleFactor(0.8)   // last-resort shrink before clipping
 
                 // Edition badge: trim / series / series2 combined
                 if let edition = vehicle.editionBadge {
@@ -63,7 +72,8 @@ struct VehicleDetailView: View {
             .padding(20)
         }
         .frame(maxWidth: .infinity)
-        .frame(height: 160)
+        // minHeight lets the card grow if large text needs more vertical room
+        .frame(minHeight: typeSize.isAccessibilitySize ? 180 : 140)
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 
