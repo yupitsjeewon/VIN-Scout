@@ -33,6 +33,7 @@ public struct NHTSAResult: Codable {
     public let Model: String?
     public let Trim: String?
     public let Series: String?
+    public let Series2: String?
 
     // MARK: Body & Drive
     public let BodyClass: String?

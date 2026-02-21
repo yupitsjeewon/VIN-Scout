@@ -48,15 +48,16 @@ struct VehicleDetailView: View {
                     .font(.largeTitle.weight(.bold))
                     .foregroundStyle(.white)
 
-                // Trim and/or Series under the model name
-                let subtitle = [vehicle.trim, vehicle.series]
-                    .compactMap { $0 }
-                    .joined(separator: " · ")
-                if !subtitle.isEmpty {
-                    Text(subtitle)
-                        .font(.subheadline.weight(.medium))
-                        .foregroundStyle(.white.opacity(0.75))
-                        .padding(.top, 2)
+                // Edition badge: trim / series / series2 combined
+                if let edition = vehicle.editionBadge {
+                    Text(edition.uppercased())
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 4)
+                        .background(.white.opacity(0.25))
+                        .clipShape(Capsule())
+                        .padding(.top, 4)
                 }
             }
             .padding(20)

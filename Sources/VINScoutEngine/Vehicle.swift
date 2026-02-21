@@ -14,6 +14,19 @@ public struct Vehicle: Codable, Equatable, Hashable, CustomStringConvertible {
     public let model: String?
     public let trim: String?
     public let series: String?
+    public let series2: String?
+
+    /// A display-ready edition label combining trim, series, and series2.
+    /// e.g. "Sport" / "EX-V6 · Limited" — nil if none are available.
+    public var editionBadge: String? {
+        let parts = [trim, series, series2].compactMap { $0 }.filter { !$0.isEmpty }
+        // Deduplicate adjacent identical tokens (API sometimes repeats)
+        var deduped: [String] = []
+        for part in parts where !deduped.contains(part) {
+            deduped.append(part)
+        }
+        return deduped.isEmpty ? nil : deduped.joined(separator: " · ")
+    }
 
     // MARK: - Body & Drive
     public let bodyClass: String?
@@ -45,6 +58,7 @@ public struct Vehicle: Codable, Equatable, Hashable, CustomStringConvertible {
         model: String? = nil,
         trim: String? = nil,
         series: String? = nil,
+        series2: String? = nil,
         bodyClass: String? = nil,
         driveType: String? = nil,
         doors: String? = nil,
@@ -65,6 +79,7 @@ public struct Vehicle: Codable, Equatable, Hashable, CustomStringConvertible {
         self.model = model
         self.trim = trim
         self.series = series
+        self.series2 = series2
         self.bodyClass = bodyClass
         self.driveType = driveType
         self.doors = doors
@@ -119,6 +134,7 @@ public struct Vehicle: Codable, Equatable, Hashable, CustomStringConvertible {
             model:                nonEmpty(result.Model),
             trim:                 nonEmpty(result.Trim),
             series:               nonEmpty(result.Series),
+            series2:              nonEmpty(result.Series2),
             bodyClass:            nonEmpty(result.BodyClass),
             driveType:            nonEmpty(result.DriveType),
             doors:                nonEmpty(result.Doors),
