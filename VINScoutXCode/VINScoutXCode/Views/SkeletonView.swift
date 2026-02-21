@@ -4,28 +4,50 @@ import SwiftUI
 
 /// Overlays a moving highlight gradient on any view to create a shimmer effect.
 /// Apply with `.shimmering()` on any skeleton placeholder shape.
+///
+/// The animation drives gradient *stop locations* rather than UnitPoint
+/// coordinates, so all values stay within [0, 1] and CoreGraphics never
+/// receives an out-of-range numeric value.
 struct Shimmer: ViewModifier {
-    @State private var phase: CGFloat = -1.5
+    /// 0 = highlight fully off the left edge; 1 = highlight fully off the right edge.
+    @State private var phase: CGFloat = 0
 
     func body(content: Content) -> some View {
         content
             .overlay(
-                LinearGradient(
-                    stops: [
-                        .init(color: .clear,                location: 0.0),
-                        .init(color: .white.opacity(0.55),  location: 0.5),
-                        .init(color: .clear,                location: 1.0),
-                    ],
-                    startPoint: UnitPoint(x: phase,       y: 0.0),
-                    endPoint:   UnitPoint(x: phase + 1.0, y: 0.0)
-                )
-                .blendMode(.overlay)
+                GeometryReader { geo in
+                    // The highlight band is 30 % of the view width.
+                    // We map `phase` [0, 1] → stops that sweep left-to-right.
+                    let bandWidth: CGFloat = 0.3
+                    let leading  = phase - bandWidth / 2          // centre - half-band
+                    let trailing = phase + bandWidth / 2          // centre + half-band
+                    // Clamp stop locations to [0, 1] so CoreGraphics is always happy.
+                    let lo = max(0, min(1, leading))
+                    let hi = max(0, min(1, trailing))
+                    let mid = max(0, min(1, phase))
+
+                    LinearGradient(
+                        stops: [
+                            .init(color: .clear,               location: lo),
+                            .init(color: .white.opacity(0.55), location: mid),
+                            .init(color: .clear,               location: hi),
+                        ],
+                        startPoint: .leading,
+                        endPoint:   .trailing
+                    )
+                    .blendMode(.overlay)
+                    // Suppress the unused-variable warning; geo is only here
+                    // to make the overlay fill the parent naturally.
+                    .frame(width: geo.size.width, height: geo.size.height)
+                }
             )
             .onAppear {
+                // Start just past the left edge and finish just past the right edge.
+                phase = 0
                 withAnimation(
                     .linear(duration: 1.4).repeatForever(autoreverses: false)
                 ) {
-                    phase = 1.5
+                    phase = 1
                 }
             }
     }
