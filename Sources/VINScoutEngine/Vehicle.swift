@@ -2,7 +2,7 @@ import Foundation
 
 /// A clean, internal representation of a vehicle decoded from a VIN.
 /// This struct decouples the rest of the app from the raw NHTSA JSON shape.
-public struct Vehicle: Codable, Equatable, CustomStringConvertible {
+public struct Vehicle: Codable, Equatable, Hashable, CustomStringConvertible {
 
     // MARK: - Properties
     public let vin: String
@@ -18,6 +18,40 @@ public struct Vehicle: Codable, Equatable, CustomStringConvertible {
     public let manufacturer: String?
     public let plantCountry: String?
     public let vehicleType: String?
+
+    // MARK: - Init
+    // Explicitly public because Swift only generates an internal memberwise
+    // initializer for public structs — external modules (e.g. the SwiftUI app)
+    // cannot call it without this declaration.
+    public init(
+        vin: String,
+        year: String? = nil,
+        make: String? = nil,
+        model: String? = nil,
+        trim: String? = nil,
+        bodyClass: String? = nil,
+        driveType: String? = nil,
+        engineCylinders: String? = nil,
+        engineDisplacementL: String? = nil,
+        fuelType: String? = nil,
+        manufacturer: String? = nil,
+        plantCountry: String? = nil,
+        vehicleType: String? = nil
+    ) {
+        self.vin = vin
+        self.year = year
+        self.make = make
+        self.model = model
+        self.trim = trim
+        self.bodyClass = bodyClass
+        self.driveType = driveType
+        self.engineCylinders = engineCylinders
+        self.engineDisplacementL = engineDisplacementL
+        self.fuelType = fuelType
+        self.manufacturer = manufacturer
+        self.plantCountry = plantCountry
+        self.vehicleType = vehicleType
+    }
 
     // MARK: - CustomStringConvertible
     public var description: String {
