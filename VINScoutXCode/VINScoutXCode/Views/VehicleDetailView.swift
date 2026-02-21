@@ -5,7 +5,6 @@ struct VehicleDetailView: View {
 
     let vehicle: Vehicle
 
-    // 2-column flexible grid for the specs
     private let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -15,7 +14,8 @@ struct VehicleDetailView: View {
         ScrollView {
             VStack(spacing: 20) {
                 heroHeader
-                specsGrid
+                bodyDriveSection
+                engineSection
                 vinFooter
             }
             .padding()
@@ -29,14 +29,12 @@ struct VehicleDetailView: View {
 
     private var heroHeader: some View {
         ZStack(alignment: .bottomLeading) {
-            // Gradient background
             LinearGradient(
                 colors: [Color.accentColor, Color.accentColor.opacity(0.6)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
 
-            // Content
             VStack(alignment: .leading, spacing: 4) {
                 if let year = vehicle.year {
                     Text(year)
@@ -50,8 +48,12 @@ struct VehicleDetailView: View {
                     .font(.largeTitle.weight(.bold))
                     .foregroundStyle(.white)
 
-                if let trim = vehicle.trim, !trim.isEmpty {
-                    Text(trim)
+                // Trim and/or Series under the model name
+                let subtitle = [vehicle.trim, vehicle.series]
+                    .compactMap { $0 }
+                    .joined(separator: " · ")
+                if !subtitle.isEmpty {
+                    Text(subtitle)
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(.white.opacity(0.75))
                         .padding(.top, 2)
@@ -64,59 +66,59 @@ struct VehicleDetailView: View {
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 
-    // MARK: - Specs Grid
+    // MARK: - Body & Drive Section
 
-    private var specsGrid: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label("Specifications", systemImage: "list.bullet.rectangle")
-                .font(.headline)
+    @ViewBuilder
+    private var bodyDriveSection: some View {
+        let cards: [(icon: String, label: String, value: String?)] = [
+            ("car.side",        "Body Style",  vehicle.bodyClass),
+            ("arrow.triangle.2.circlepath", "Drive Type", vehicle.driveType),
+            ("door.left.hand.open", "Doors",   vehicle.doors),
+        ]
+        let filtered = cards.filter { $0.value != nil }
 
-            LazyVGrid(columns: columns, spacing: 12) {
-                SpecCard(
-                    icon: "car.side",
-                    label: "Body",
-                    value: vehicle.bodyClass
-                )
-                SpecCard(
-                    icon: "arrow.triangle.2.circlepath",
-                    label: "Drive Type",
-                    value: vehicle.driveType
-                )
-                SpecCard(
-                    icon: "cylinder.split.1x2",
-                    label: "Cylinders",
-                    value: vehicle.engineCylinders
-                )
-                SpecCard(
-                    icon: "gauge.with.dots.needle.67percent",
-                    label: "Displacement",
-                    value: vehicle.engineDisplacementL.map { "\($0)L" }
-                )
-                SpecCard(
-                    icon: "fuelpump.fill",
-                    label: "Fuel Type",
-                    value: vehicle.fuelType
-                )
-                SpecCard(
-                    icon: "building.2",
-                    label: "Manufacturer",
-                    value: vehicle.manufacturer
-                )
-                SpecCard(
-                    icon: "globe",
-                    label: "Plant Country",
-                    value: vehicle.plantCountry
-                )
-                SpecCard(
-                    icon: "tag",
-                    label: "Vehicle Type",
-                    value: vehicle.vehicleType
-                )
+        if !filtered.isEmpty {
+            SpecSection(title: "Body & Drive", icon: "car") {
+                LazyVGrid(columns: columns, spacing: 12) {
+                    ForEach(filtered, id: \.label) { card in
+                        SpecCard(icon: card.icon, label: card.label, value: card.value)
+                    }
+                }
             }
         }
-        .padding(16)
-        .background(Color(.secondarySystemGroupedBackground))
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+
+    // MARK: - Engine Section
+
+    @ViewBuilder
+    private var engineSection: some View {
+        // Build turbo display string only if true
+        let turboValue: String? = vehicle.isTurbocharged ? "Yes" : nil
+
+        let cards: [(icon: String, label: String, value: String?)] = [
+            ("bolt.fill",           "Horsepower",    vehicle.engineHorsepower.map { "\($0) hp" }),
+            ("engine.combustion",   "Configuration", vehicle.engineConfiguration),
+            ("cylinder.split.1x2",  "Cylinders",     vehicle.engineCylinders),
+            ("gauge.with.dots.needle.67percent", "Displacement",
+             vehicle.engineDisplacementL.map { "\($0)L" }),
+            ("tag",                 "Engine Model",  vehicle.engineModel),
+            ("waveform.path",       "Valve Train",   vehicle.valveTrainDesign),
+            ("wind",                "Turbocharged",  turboValue),
+            ("fuelpump.fill",       "Fuel Type",     vehicle.fuelType),
+            ("gearshift.layout.automatic", "Transmission", vehicle.transmissionStyle),
+            ("number",              "Speeds",        vehicle.transmissionSpeeds),
+        ]
+        let filtered = cards.filter { $0.value != nil }
+
+        if !filtered.isEmpty {
+            SpecSection(title: "Engine & Drivetrain", icon: "engine.combustion") {
+                LazyVGrid(columns: columns, spacing: 12) {
+                    ForEach(filtered, id: \.label) { card in
+                        SpecCard(icon: card.icon, label: card.label, value: card.value)
+                    }
+                }
+            }
+        }
     }
 
     // MARK: - VIN Footer
@@ -129,7 +131,7 @@ struct VehicleDetailView: View {
             Text(vehicle.vin)
                 .font(.system(.body, design: .monospaced))
                 .foregroundStyle(.primary)
-                .textSelection(.enabled)   // Long-press to copy
+                .textSelection(.enabled)
         }
         .frame(maxWidth: .infinity)
         .padding(16)
@@ -138,7 +140,26 @@ struct VehicleDetailView: View {
     }
 }
 
-// MARK: - Spec Card Component
+// MARK: - Spec Section Container
+
+private struct SpecSection<Content: View>: View {
+    let title: String
+    let icon: String
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label(title, systemImage: icon)
+                .font(.headline)
+            content()
+        }
+        .padding(16)
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+}
+
+// MARK: - Spec Card
 
 private struct SpecCard: View {
     let icon: String
@@ -146,7 +167,6 @@ private struct SpecCard: View {
     let value: String?
 
     var body: some View {
-        // Don't render cards whose value is nil
         if let value {
             VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 6) {
@@ -182,12 +202,17 @@ private struct SpecCard: View {
             trim: "EX-V6",
             bodyClass: "Coupe",
             driveType: "FWD",
+            doors: "2",
+            engineHorsepower: "240",
+            engineConfiguration: "V-Shaped",
             engineCylinders: "6",
-            engineDisplacementL: "2.998832712",
+            engineDisplacementL: "3.0",
+            engineModel: "J30A4",
             fuelType: "Gasoline",
-            manufacturer: "AMERICAN HONDA MOTOR CO., INC.",
-            plantCountry: "UNITED STATES (USA)",
-            vehicleType: "PASSENGER CAR"
+            valveTrainDesign: "Single Overhead Cam (SOHC)",
+            isTurbocharged: false,
+            transmissionStyle: "Automatic",
+            transmissionSpeeds: "5"
         ))
     }
 }

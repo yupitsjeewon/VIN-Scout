@@ -27,24 +27,31 @@ public struct NHTSAResult: Codable {
     // MARK: Identity
     public let VIN: String?
 
-    // MARK: Vehicle attributes
+    // MARK: Year / Make / Model / Trim
     public let ModelYear: String?
     public let Make: String?
     public let Model: String?
     public let Trim: String?
+    public let Series: String?
+
+    // MARK: Body & Drive
     public let BodyClass: String?
     public let DriveType: String?
+    public let Doors: String?
 
     // MARK: Engine
+    public let EngineHP: String?
+    public let EngineConfiguration: String?     // e.g. "V-Shaped", "Inline"
     public let EngineCylinders: String?
     public let DisplacementL: String?
-    public let FuelTypePrimary: String?
     public let EngineModel: String?
+    public let FuelTypePrimary: String?
+    public let ValveTrainDesign: String?        // e.g. "Single Overhead Cam (SOHC)"
+    public let Turbo: String?                   // "Yes" or "" (empty = no turbo)
 
-    // MARK: Additional useful fields
-    public let Manufacturer: String?
-    public let PlantCountry: String?
-    public let VehicleType: String?
+    // MARK: Transmission
+    public let TransmissionStyle: String?       // e.g. "Automatic", "Manual"
+    public let TransmissionSpeeds: String?      // e.g. "6"
 
     // MARK: - Derived helpers
 
