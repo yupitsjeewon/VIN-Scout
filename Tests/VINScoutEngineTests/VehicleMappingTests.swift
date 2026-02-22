@@ -114,10 +114,6 @@ final class VehicleMappingTests: XCTestCase {
         XCTAssertEqual(vehicle.fuelType, "Electric")
     }
 
-    func test_vehicleMapping_manufacturer() throws {
-        let vehicle = try decodedVehicle()
-        XCTAssertEqual(vehicle.manufacturer, "TESLA, INC.")
-    }
 
     func test_vehicleMapping_emptyEngineCylinders_isNil() throws {
         // Tesla returns empty string for cylinders → should map to nil

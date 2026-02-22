@@ -47,7 +47,6 @@ fileprivate extension VehicleMappingTests {
         ("test_vehicleMapping_emptyEngineCylinders_isNil", test_vehicleMapping_emptyEngineCylinders_isNil),
         ("test_vehicleMapping_fuelType", test_vehicleMapping_fuelType),
         ("test_vehicleMapping_make", test_vehicleMapping_make),
-        ("test_vehicleMapping_manufacturer", test_vehicleMapping_manufacturer),
         ("test_vehicleMapping_model", test_vehicleMapping_model),
         ("test_vehicleMapping_trim", test_vehicleMapping_trim),
         ("test_vehicleMapping_vin_isUppercased", test_vehicleMapping_vin_isUppercased),

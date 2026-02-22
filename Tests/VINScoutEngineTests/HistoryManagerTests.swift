@@ -20,10 +20,7 @@ final class HistoryManagerTests: XCTestCase {
             driveType: "FWD",
             engineCylinders: "4",
             engineDisplacementL: "1.5",
-            fuelType: "Gasoline",
-            manufacturer: make,
-            plantCountry: "USA",
-            vehicleType: "PASSENGER CAR"
+            fuelType: "Gasoline"
         )
     }
 
