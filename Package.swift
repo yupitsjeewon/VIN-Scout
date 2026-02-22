@@ -3,22 +3,37 @@
 
 import PackageDescription
 
+// VINScoutTester is a Windows/Linux CLI tool that uses a Task + DispatchSemaphore
+// pattern to work around missing @main async support on those platforms.
+// It does not build cleanly on macOS/arm64, so we exclude it there.
+#if os(macOS)
+let extraProducts: [Product] = []
+let extraTargets: [Target] = []
+#else
+let extraProducts: [Product] = [
+    .executable(name: "VINScoutTester", targets: ["VINScoutTester"])
+]
+let extraTargets: [Target] = [
+    .executableTarget(
+        name: "VINScoutTester",
+        dependencies: ["VINScoutEngine"],
+        path: "Sources/VINScoutTester"
+    )
+]
+#endif
+
 let package = Package(
     name: "VINScoutEngine",
     platforms: [
         .iOS(.v16),
-        .macOS(.v13) // Required for Windows/Linux builds and testing
+        .macOS(.v13)
     ],
     products: [
         .library(
             name: "VINScoutEngine",
             targets: ["VINScoutEngine"]
         ),
-        .executable(
-            name: "VINScoutTester",
-            targets: ["VINScoutTester"]
-        )
-    ],
+    ] + extraProducts,
     targets: [
         // MARK: - Core Library
         .target(
@@ -32,11 +47,5 @@ let package = Package(
             dependencies: ["VINScoutEngine"],
             path: "Tests/VINScoutEngineTests"
         ),
-        // MARK: - CLI Tester (swift run VINScoutTester <VIN>)
-        .executableTarget(
-            name: "VINScoutTester",
-            dependencies: ["VINScoutEngine"],
-            path: "Sources/VINScoutTester"
-        )
-    ]
+    ] + extraTargets
 )
